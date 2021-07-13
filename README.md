@@ -1,2 +1,2 @@
 # pythonNN
-An Implement of Neural Network by Python
+An Implementation of Neural Network by Python
