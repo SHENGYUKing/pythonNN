@@ -37,7 +37,7 @@ Where the partial derivative of the cost function with respect to Z is actually 
 Now, we can use the above partial derivatives to update the parameters.    
 update weights (w):    
 <img src="https://latex.codecogs.com/png.image?\dpi{120}&space;\bg_white&space;W=W-\alpha\frac{\partial&space;J}{\partial&space;W}" title="\bg_white W=W-\alpha\frac{\partial J}{\partial W}" />    
-update bias (b):    
+update biases (b):    
 <img src="https://latex.codecogs.com/png.image?\dpi{120}&space;\bg_white&space;b=b-\alpha\frac{\partial&space;J}{\partial&space;b}" title="\bg_white b=b-\alpha\frac{\partial J}{\partial b}" />    
 The alpha in the above formulas means learning rate, and it is usually a very small number (about 0.01).    
 
