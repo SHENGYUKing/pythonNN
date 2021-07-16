@@ -103,7 +103,7 @@ def linear_forward(A, W, b):
     linear unit of a layer's forward propagation
     :param A: np.array, activation from previous layer
     :param W: np.array, weights matrix of current layer
-    :param b: np.array, bias vector of current layer
+    :param b: np.array, biases vector of current layer
     :return:
         Z, np.array, pre-activation for current activation
         cache, dict, store A, W, b for backward propagate
@@ -119,7 +119,7 @@ def linear_activation_forward(A_prev, W, b, activation):
     activation of forward propagation
     :param A_prev: np.array, activations from previous layer
     :param W: np.array, weights matrix of current layer
-    :param b: np.array, bias vector of current layer
+    :param b: np.array, biases vector of current layer
     :param activation: str, activation mode of current layer, "sigmoid" or "relu" (default)
     :return:
         A, np.array, the output of current layer's activation function
@@ -238,7 +238,7 @@ def nn_backward(AL, y, caches):
         grads, dict, dictionary with the gradients
         grads.dA(n), np.array, gradient of the cost with respect to the nth layer's activation
         grads.dW(n), np.array, gradient of the cost with respect to the nth layer's weights
-        grads.db(n), np.array, gradient of the cost with respect to the nth layer's bias
+        grads.db(n), np.array, gradient of the cost with respect to the nth layer's biases
     """
     grads = {}
     num_layer = len(caches)
